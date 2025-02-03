@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css";
 const inter = Inter({ subsets: ["latin"] })
 import MouseMoveEffect from "@/components/mouse-move-effect"
+import { ToastContainer } from "react-toastify";
 
 export const metadata = {
   title: "Your Name - Portfolio",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} bg-background text-foreground antialiased`}>
                 <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
                   <MouseMoveEffect/>
+                  <ToastContainer position="top-center" autoClose={3000} hideProgressBar/>
           {children}
         </ThemeProvider>
       </body>

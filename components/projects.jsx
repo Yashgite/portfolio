@@ -5,8 +5,8 @@ import Image from "next/image"
 
 const projects = [
   {
-    title: "Project 1",
-    description: "A brief description of Project 1",
+    title: "Moviedux",
+    description: "a basic movie application implementing feature like search on the base of genere , name and add to wishlist",
     image: "/next.png",
     link: "#",
   },

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { useState } from "react"
 import { Github, Linkedin, Twitter } from "lucide-react"
+import { ToastContainer,toast } from "react-toastify"
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,13 +12,9 @@ const Contact = () => {
     message: "",
   })
 
-  const handleChange = () => {
-    const { name, value } = e.target
-    setFormData((prevData) => ({ ...prevData, [name]: value }))
-  }
-
-  const handleSubmit = () => {
-    e.preventDefault()
+  const handleSubmit = (e) => {
+    toast.success("This service are inactive, plz try through linkdin")
+    e.preventDefault();
     // Handle form submission logic here
     console.log("Form submitted:", formData)
     // Reset form after submission
@@ -52,7 +49,7 @@ const Contact = () => {
                   id="name"
                   name="name"
                   value={formData.name}
-                  onChange={handleChange}
+                  onChange={(e)=> setFormData({...formData, name: e.target.value})}
                   required
                   className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                 />
@@ -66,7 +63,7 @@ const Contact = () => {
                   id="email"
                   name="email"
                   value={formData.email}
-                  onChange={handleChange}
+                  onChange={(e)=> setFormData({...formData, email: e.target.value})}
                   required
                   className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                 />
@@ -79,7 +76,7 @@ const Contact = () => {
                   id="message"
                   name="message"
                   value={formData.message}
-                  onChange={handleChange}
+                  onChange={(e)=> setFormData({...formData, message: e.target.value})}
                   required
                   rows={4}
                   className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
