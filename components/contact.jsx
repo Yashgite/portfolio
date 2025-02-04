@@ -33,6 +33,44 @@ const Contact = () => {
           Contact Me
         </motion.h2>
         <div className="flex flex-col md:flex-row gap-8">
+        <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="md:w-1/2"
+          >
+            <h3 className="text-xl font-semibold mb-4">Connect with me</h3>
+            <p className="mb-4">
+              Feel free to reach out to me on social media or through the contact form. I'm always excited to connect
+              with fellow developers and potential clients!
+            </p>
+            <div className="flex space-x-4">
+              <a
+                href="https://github.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-primary transition-colors"
+              >
+                <Github size={24} />
+              </a>
+              <a
+                href="https://linkedin.com/in/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-primary transition-colors"
+              >
+                <Linkedin size={24} />
+              </a>
+              <a
+                href="https://twitter.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-primary transition-colors"
+              >
+                <Twitter size={24} />
+              </a>
+            </div>
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -90,44 +128,7 @@ const Contact = () => {
               </button>
             </form>
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="md:w-1/2"
-          >
-            <h3 className="text-xl font-semibold mb-4">Connect with me</h3>
-            <p className="mb-4">
-              Feel free to reach out to me on social media or through the contact form. I'm always excited to connect
-              with fellow developers and potential clients!
-            </p>
-            <div className="flex space-x-4">
-              <a
-                href="https://github.com/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-foreground hover:text-primary transition-colors"
-              >
-                <Github size={24} />
-              </a>
-              <a
-                href="https://linkedin.com/in/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-foreground hover:text-primary transition-colors"
-              >
-                <Linkedin size={24} />
-              </a>
-              <a
-                href="https://twitter.com/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-foreground hover:text-primary transition-colors"
-              >
-                <Twitter size={24} />
-              </a>
-            </div>
-          </motion.div>
+          
         </div>
       </div>
     </section>

@@ -5,6 +5,7 @@ import Projects from "@/components/projects"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
 import Experience from "@/components/experience"
+import TechStack from "@/components/techstack"
 
 export default function Home() {
   return (
@@ -20,10 +21,10 @@ export default function Home() {
       <About />
       <Experience />
       <Projects />
+      <TechStack/>
       <Contact />
       <Footer />
       </div>
-      
     </main>
   )
 }

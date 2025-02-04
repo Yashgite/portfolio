@@ -7,13 +7,13 @@ const projects = [
   {
     title: "Moviedux",
     description: "a basic movie application implementing feature like search on the base of genere , name and add to wishlist",
-    image: "/next.png",
+    image: "/prj1.png",
     link: "#",
   },
   {
-    title: "Project 2",
-    description: "A brief description of Project 2",
-    image: "/shadcn.png",
+    title: "FoodHub",
+    description: "A simple Foodhub Website which is develop by using plain Html and Css",
+    image: "/prj2.png",
     link: "#",
   },
   {

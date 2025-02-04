@@ -12,7 +12,7 @@ const Footer = () => {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <p className="text-muted-foreground">&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p className="text-muted-foreground">&copy; {new Date().getFullYear()} yashgite.dev All rights reserved.</p>
         </motion.div>
       </div>
     </footer>
