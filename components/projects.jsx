@@ -14,7 +14,7 @@ const projects = [
     title: "FoodHub",
     description: "A simple Foodhub Website which is develop by using plain Html and Css",
     image: "/prj2.png",
-    link: "#",
+    link: "https://codesandbox.io/p/sandbox/github/Yashgite/FoodHub",
   },
   {
     title: "Project 3",
@@ -30,7 +30,7 @@ const Projects = () => {
       <div className="container-custom">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-3xl md:text-4xl font-bold mb-8 text-center"
         >
@@ -41,7 +41,7 @@ const Projects = () => {
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <a

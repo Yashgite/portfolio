@@ -36,8 +36,8 @@ const ProfileCards = () => {
                 </CardContent>
                 <CardFooter className="text-start text-2xl flex justify-start">
                     <div className="flex space-x-3">
-                        <Link href="/"> <CiLinkedin /> </Link>
-                        <Link href="/"><IoLogoGithub /></Link>
+                        <Link href="https://www.linkedin.com/in/yash-gite"> <CiLinkedin /> </Link>
+                        <Link href="https://github.com/Yashgite"><IoLogoGithub /></Link>
                         </div>
                 </CardFooter>
             </Card>

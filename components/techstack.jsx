@@ -26,11 +26,11 @@ export default function TechStack() {
     <div className="container-custom py-20">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-3xl md:text-4xl font-bold mb-8 text-center"
         >
-          Contact Me
+          Tools and Technologies
         </motion.h2>
         <div className="grid gap-6 md:grid-cols-2">
       {technologies.map((tech) => (

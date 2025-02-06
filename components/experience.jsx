@@ -4,25 +4,18 @@ import { motion } from "framer-motion"
 
 const experiences = [
   {
-    title: "Senior Web Developer",
-    company: "Tech Solutions Inc.",
-    period: "Jan 2020 - Present",
+    title: "Full Stack Developer",
+    company: "Soulputs Technology Solutions Pvt Ltd.",
+    period: "Dec 2024 - Present",
     description:
-      "Lead developer for various high-profile web applications. Implemented modern front-end technologies and improved overall performance.",
+      "Developed and maintained web applications using modern technologies. Worked on the development of a new product from scratch.",
   },
   {
     title: "Full Stack Developer",
-    company: "Digital Innovations Ltd.",
-    period: "Mar 2017 - Dec 2019",
+    company: "CodElevate Technologies",
+    period: "Jun 2024 - July 2024",
     description:
-      "Developed and maintained multiple web applications. Collaborated with cross-functional teams to deliver projects on time.",
-  },
-  {
-    title: "Junior Web Developer",
-    company: "StartUp Ventures",
-    period: "Jun 2015 - Feb 2017",
-    description:
-      "Assisted in the development of responsive websites. Gained experience in modern web technologies and agile methodologies.",
+      "Developedd a comprehensive eccomerce website with customer and Admin panel from Scratch. mainly worked on backend using php and mysql.",
   },
 ]
 
@@ -32,7 +25,7 @@ const Experience = () => {
       <div className="container-custom">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-3xl md:text-4xl font-bold mb-8 text-center"
         >
@@ -43,7 +36,7 @@ const Experience = () => {
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-card rounded-lg p-6 shadow-md"
             >

@@ -4,6 +4,7 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import { useTheme } from "next-themes"
 import { Moon, Sun } from "lucide-react"
+import Link from "next/link"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -22,30 +23,37 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm">
       <nav className="container-custom py-4">
-        <div className="flex items-center justify-around">
-          <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
-            <a href="#" className="text-xl font-bold border-5 p-2 rounded-2xl">
-              YG
-            </a>
+        <div className="flex items-center lg:justify-around justify-between">
+          <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
+            <Link className="border p-3 rounded-full" href="https://drive.google.com/file/d/1WBDe3p5DoVoRb21zTbTGgmW-c5lJP5l2/view?usp=sharing" target="_blank">
+              Resume
+            </Link>
           </motion.div>
-          <div className="flex items-center space-x-5">
-            {menuItems.map((item) => (
-              <motion.a
-                key={item.name}
-                href={item.href}
-                className="hover:text-primary transition-colors"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
+          <div className="space-x-5 hidden lg:block">
+            <div className="space-x-4 flex items-center">
+              <div className="space-x-4">
+                {menuItems.map((item) => (
+                <motion.a
+                  key={item.name}
+                  href={item.href}
+                  className="hover:text-primary transition-colors"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {item.name}
+                </motion.a>
+              ))}</div>
+              <div>
+                <button
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                className="p-2 rounded-full hover:bg-muted transition-colors"
               >
-                {item.name}
-              </motion.a>
-            ))}
-            <button
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="p-2 rounded-full hover:bg-muted transition-colors"
-            >
-              {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
+                {theme === "dark" ? <Sun size={24} /> : <Moon size={24} />}
+              </button>
+              </div>
+            </div>
+
+
           </div>
           <div className="lg:hidden">
             <button onClick={toggleMenu} className="text-foreground focus:outline-none">
@@ -69,7 +77,7 @@ const Header = () => {
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
             className="md:hidden mt-4 space-y-2"
