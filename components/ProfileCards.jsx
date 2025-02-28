@@ -20,7 +20,7 @@ const ProfileCards = () => {
             <Card className="w-[350px] mx-auto border-none">
                 <CardHeader>
                     <Image
-                    src="/yash.png"
+                    src="./yash.png"
                     className="object-cover w-80 h-80 rounded-2xl"
                     width={400}
                     height={200}

@@ -7,13 +7,13 @@ const projects = [
   {
     title: "Moviedux",
     description: "a basic movie application implementing feature like search on the base of genere , name and add to wishlist",
-    image: "/prj1.png",
+    image: "./prj1.png",
     link: "#",
   },
   {
     title: "FoodHub",
     description: "A simple Foodhub Website which is develop by using plain Html and Css",
-    image: "/prj2.png",
+    image: "./prj2.png",
     link: "https://codesandbox.io/p/sandbox/github/Yashgite/FoodHub",
   },
   {
