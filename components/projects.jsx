@@ -16,12 +16,12 @@ const projects = [
     image: "./prj2.png",
     link: "https://codesandbox.io/p/sandbox/github/Yashgite/FoodHub",
   },
-  {
-    title: "Project 3",
-    description: "A brief description of Project 3",
-    image: "/react.png",
-    link: "#",
-  },
+  // {
+  //   title: "Project 3",
+  //   description: "A brief description of Project 3",
+  //   image: "/react.png",
+  //   link: "#",
+  // },
 ]
 
 const Projects = () => {
