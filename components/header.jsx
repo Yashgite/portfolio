@@ -25,7 +25,7 @@ const Header = () => {
       <nav className="container-custom py-4">
         <div className="flex items-center lg:justify-around justify-between">
           <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
-            <Link className="border p-3 rounded-full" href="https://drive.google.com/file/d/1WBDe3p5DoVoRb21zTbTGgmW-c5lJP5l2/view?usp=sharing" target="_blank">
+            <Link className="border p-3 rounded-full" href="https://drive.google.com/file/d/182q36gtnAHr5Cd_V9PNoyB2BrhnCP_rE/view?usp=sharing" target="_blank">
               Resume
             </Link>
           </motion.div>
